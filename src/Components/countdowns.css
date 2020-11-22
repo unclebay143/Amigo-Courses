@@ -1,0 +1,10 @@
+.counters{
+  text-align: center;
+}
+
+.counters li{
+  color: #333333;
+  display: inline;
+  text-align: center;
+  font-size: 50px;
+}

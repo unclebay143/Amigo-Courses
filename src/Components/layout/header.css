@@ -1,0 +1,33 @@
+body{
+  background-color: #ffffff;
+}
+.navbar {
+  font-family: monospace;
+  background: #FF6347;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.logo {
+  color: white;
+  margin: 15px 12px 12px 50px;
+  font-size: 30px;
+}
+
+.navbar-link a {
+  margin: 12px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.navbar-link #loginBtn{
+  background: #ffffff;
+  color: #333333;
+  font-weight: 700;
+  /* pa */
+}
