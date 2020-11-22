@@ -1,4 +1,4 @@
-/* body{
+body{
   background-color: #ffffff;
 }
 .navbar {
@@ -29,4 +29,6 @@
   background: #ffffff;
   color: #333333;
   font-weight: 700;
-} */
+}
+
+/* media query */
