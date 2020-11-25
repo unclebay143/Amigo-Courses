@@ -4,14 +4,15 @@ class CountDown extends Component {
   constructor(){
     super()
     this.state = {
-      hour: 0,
-      minute: 0,
-      second: 0
+      hour: 24,
+      minute: 10,
+      second: 10
     }
     // console.log(typeof(this.state.hour))
    const hourTimer = () => {
       this.setState({
-        hour: this.state.hour + 1,
+        
+        hour: this.state.hour - 1,
         // minute: this.state.minute + 2,
         // second: this.state.second + 1
       })
@@ -19,7 +20,7 @@ class CountDown extends Component {
    const minuteTimer = () => {
       this.setState({
         // hour: this.state.hour + 1,
-        minute: this.state.minute + 2,
+        minute: this.state.minute - 2,
         // second: this.state.second + 1
       })
     }
@@ -27,11 +28,11 @@ class CountDown extends Component {
       this.setState({
         // hour: this.state.hour + 1,
         // minute: this.state.minute + 2,
-        second: this.state.second + 1
+        second: this.state.second - 1
       })
-          if(this.state.second === 60){
+          if(this.state.second === 0){
             this.setState({
-              second: 0
+              second: 60
             })
 
           }
@@ -44,9 +45,11 @@ class CountDown extends Component {
     return (
       <div  className="counters">
         <ul>
-          <li> {this.state.hour} : </li>
-          <li> {this.state.minute} : </li>
-          <li> {this.state.second}  </li>
+          <span> New course in </span>
+          {/* <li><span> New course in </span> {this.state.hour} Hours : </li> */}
+          <li>{this.state.hour} Hours : </li>
+          <li> {this.state.minute} Minutes : </li>
+          <li> {this.state.second}  Seconds</li>
         </ul>
       </div>
     )

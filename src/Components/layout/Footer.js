@@ -39,7 +39,7 @@ function Footer() {
           <li>
           <form className="subscribeForm">
             <input type="email" placeholder="Enter Email" />
-            <Button label="Subscribe" id="subscribeBtn"/>
+            <Button className="btn" label="Subscribe" id="subscribeBtn"/>
           </form>
           </li>
           {/* <li className="developer">Designed with love by unclebay</li> */}

@@ -2,10 +2,13 @@ body{
   background-color: #ffffff;
 }
 .navbar {
-  font-family: monospace;
   background: #FF6347;
   display: flex;
   align-items: center;
+}
+
+.hamburger{
+  display: none;
 }
 
 .navbar-link {
@@ -17,6 +20,11 @@ body{
   color: white;
   margin: 15px 12px 12px 50px;
   font-size: 30px;
+  white-space: nowrap;
+}
+
+.logo-mini{
+  display: none;
 }
 
 .navbar-link a {
@@ -25,10 +33,53 @@ body{
   color: #ffffff;
 }
 
+.navbar-link input{
+  margin-right: 3px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 3px;
+}
+
 .navbar-link #loginBtn{
-  background: #ffffff;
-  color: #333333;
+  color: #ffffff;
+  background: #333333;
   font-weight: 700;
+  font-size: 15px;
+  padding: 3px 12px 6px 12px;
+  margin: 0px;
+  border-radius: 5px;
 }
 
 /* media query */
+
+@media (max-width: 1100px){
+  .navbar-link{
+    display: none;
+  }
+
+  .hamburger{
+    color: #ffffff;
+    font-size: 23px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
+  }
+
+
+}
+
+
+@media (max-width: 800px){
+  .logo{
+    display: none;
+  }
+
+  .logo-mini{
+    display: block;
+    color: white;
+    margin: 15px 12px 12px 45px;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+}

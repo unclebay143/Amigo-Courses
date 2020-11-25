@@ -1,15 +1,20 @@
-// import React from 'react';
+import React, { Component } from 'react';
+import './inputStyles.css';
+class InputFormGroup extends Component {
+  constructor(props){
+    super(props)
+  }
+  render() {
+    const {type, placeholder } = this.props
+    return (
+    <React.Fragment>
+      <input className="input-box" type={type} placeholder={placeholder} />
+    </React.Fragment>
+    )
+  }
+}
 
-// const InputFormGroup = () => {
-//   constructor(props){
-//     super(props)
-//   };
-//   return (
-//     <React.Fragment>
-//       <input type={type} placeholder={placeholder} />
-//     </React.Fragment>
-//   )
-// }
+
+export default InputFormGroup;
 
 
-// export default InputFormGroup;

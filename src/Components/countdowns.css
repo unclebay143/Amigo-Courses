@@ -1,10 +1,30 @@
 .counters{
-  text-align: center;
+  margin-top: 70px;
+  padding: 0px 13px;
 }
 
+.counters span{
+  font-weight: 400;
+  font-size: 2.3rem;
+  color: #333333;
+  margin-right: 21px;
+}
 .counters li{
   color: #333333;
   display: inline;
-  text-align: center;
-  font-size: 50px;
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+@media (max-width: 900px){
+  .counters{
+    margin: 30px auto;
+  }  
+
+  .counters ul{
+    /* white-space: pre-line; */
+    /* width: 100px; */
+    display: flex;
+    flex-direction: column;
+  }
 }
