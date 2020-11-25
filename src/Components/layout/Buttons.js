@@ -6,8 +6,9 @@ class Button extends Component {
   }
   
   render() {
+    const {id, to, label, className } = this.props
     return (
-      <a id={this.props.id} className="btn" href={this.props.to}>{this.props.label}</a>
+      <a id={id} className= {className} href={to}>{label}</a>
     )
   }
 }
