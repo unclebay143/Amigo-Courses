@@ -8,7 +8,7 @@ function Header() {
   return (
       <React.Fragment>
         <div className="navbar">
-          <h4 className="logo">Amigo Junior Dev</h4>
+          <Link to='/' className="logo">Amigo Junior Dev</Link>
           <h4 className="logo-mini">AJD</h4>
           <i className="hamburger fa fa-bars"></i>
           <section className="navbar-link">
