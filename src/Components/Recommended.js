@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {v4 as uuidv4} from 'uuid';
+import './recommended.css' 
 class Recommended extends Component {
   constructor(props){
     super(props)

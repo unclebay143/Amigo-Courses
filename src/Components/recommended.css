@@ -1,0 +1,12 @@
+.recommended-container {
+  padding: 12px;
+  margin: 19px;
+  display: flex;
+  width: 100px;
+}
+
+.recommended-container .recommended {
+  padding: 12px;
+  margin: 12px;
+
+}
