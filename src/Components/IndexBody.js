@@ -5,7 +5,7 @@ import Landing from './landing.svg'
 // import CountDown from './CountDown'
 import { CourseContextApi } from './CourseApi';
 import CourseCard from './CourseCard';
-
+import Recommended from './Recommended';
 class Body extends Component {
   static contextType = CourseContextApi;
   render() {
@@ -31,6 +31,7 @@ class Body extends Component {
                   <CourseCard />
                 </div>
               </div>
+              <Recommended/>
             </div>
         </React.Fragment>
     )

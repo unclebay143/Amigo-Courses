@@ -1,10 +1,10 @@
-import Index from './Components'
+import IndexBody from './Components/IndexBody'
 import {Internship, Courses, Header} from './Components/layout/Header'
 import Footer from './Components/layout/Footer'
 import {Java, Javascript, Python, Html, Css} from "./Components/Courses";
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Header />
           <Switch>
-            <Route exact path="/" component={Index} />
+            <Route exact path="/" component={IndexBody} />
             <Route exact path="/internship" component={Internship} />
             <Route exact path="/courses" component={Courses} />
             <Route exact path="/java" component={Java} />
