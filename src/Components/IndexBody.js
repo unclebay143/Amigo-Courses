@@ -10,7 +10,6 @@ class Body extends Component {
   static contextType = CourseContextApi;
   render() {
     const value = this.context;
-    console.log(value)
     return (
         <React.Fragment>
             <div className="main">
@@ -24,14 +23,18 @@ class Body extends Component {
             </div>
             <div>
               {/* <CountDown /> */}
-              <div className="course-lead">Available Courses</div>
+              <h4 className="course-lead">Available Courses</h4>
               <hr className="course-lead-liner"/>
               <div className="course-card">
                 <div className="card-container">
                   <CourseCard />
                 </div>
               </div>
-              <Recommended/>
+
+              <h4 className="recommended-lead">What to Learn Next</h4>
+              <div className="recommended-section">
+                <Recommended/>
+              </div>
             </div>
         </React.Fragment>
     )
