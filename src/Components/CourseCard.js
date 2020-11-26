@@ -19,8 +19,7 @@ class CourseCard extends Component {
                       <div className="course-content">
                         <h2>{course.title}</h2>
                         <h3>{course.level}</h3>
-                        <p>Duration: {course.duration}</p>
-                        <i className="fa fas-book"></i>
+                        <p>{course.duration}</p>
                       </div>
                     </div>
                   </Link>
