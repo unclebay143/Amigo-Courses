@@ -6,20 +6,20 @@ import './courseCard.css'
 class CourseCard extends Component {
   static contextType = CourseContextApi;
   render(){
-  const value = this.context
+  const courses = this.context
   // const {id, title, level, duration} = value
     return (
       <React.Fragment>
         {
-          value.map((x)=>{
+          courses.map((course)=>{
             return (
-                <React.Fragment key={x.id}>
-                  <Link to={`/${x.title}`}>
-                    <div className="child">
-                      <div className="child-content">
-                        <h2>{x.title}</h2>
-                        <h3>{x.level}</h3>
-                        <p>{x.duration}</p>
+                <React.Fragment key={course.id}>
+                  <Link to={`/${course.title}`}>
+                    <div className="course">
+                      <div className="course-content">
+                        <h2>{course.title}</h2>
+                        <h3>{course.level}</h3>
+                        <p>{course.duration}</p>
                       </div>
                     </div>
                   </Link>

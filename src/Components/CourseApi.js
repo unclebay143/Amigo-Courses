@@ -12,18 +12,6 @@ class CourseApi extends Component {
       courses: [
         {
           id: uuidv4(),
-          title: "Python",
-          level: "Beginner",
-          duration: "5 hours"
-        },
-        {
-          id: uuidv4(),
-          title: "Javascript",
-          level: "Beginner",
-          duration: "7 hours"
-        },
-        {
-          id: uuidv4(),
           title: "Html",
           level: "Beginner",
           duration: "5 hours"
@@ -36,6 +24,18 @@ class CourseApi extends Component {
         },
         {
           id: uuidv4(),
+          title: "Javascript",
+          level: "Beginner",
+          duration: "7 hours"
+        },
+        {
+          id: uuidv4(),
+          title: "Python",
+          level: "Beginner",
+          duration: "5 hours"
+        },
+        {
+          id: uuidv4(),
           title: "Java",
           level: "Beginner",
           duration: "15 hours"
@@ -45,6 +45,18 @@ class CourseApi extends Component {
           title: "Go",
           level: "Beginner",
           duration: "15 hours"
+        },
+        {
+          id: uuidv4(),
+          title: "Mysql",
+          level: "Beginner",
+          duration: "11 hours"
+        },
+        {
+          id: uuidv4(),
+          title: "MongoDb",
+          level: "Beginner",
+          duration: "6 hours"
         },
       ]
     }
